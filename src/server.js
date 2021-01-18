@@ -23,22 +23,10 @@ app.get('/ping', (_, res) => {
 app.use('/api/v1/users/', require('./controllers/users/ctr-users'))
 
 /**
- * Egresados Routes...
+ *  Tareas Routes...
 */
 
-app.use('/api/v1/egresados/', require('./controllers/egresados/ctr-egresados'));
-
-/**
- * Empresa u organización...
-*/
-
-app.use('/api/v1/empresas/', require('./controllers/enterprise/ctr-enterprise'));
-
-/**
- * Gráficos de egresados...
-*/
-
-app.use('/api/v1/graficos/egresados/', require('./controllers/graphics/ctr-egresados-graph'));
+app.use('/api/v1/works/', require('./controllers/works/ctr-works'))
 
 /*
  * Handler not found routes
