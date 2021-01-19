@@ -17,12 +17,6 @@ app.get('/ping', (_, res) => {
 });
 
 /**
- *  Usuarios Routes...
-*/
-
-app.use('/api/v1/users/', require('./controllers/users/ctr-users'))
-
-/**
  *  Tareas Routes...
 */
 
